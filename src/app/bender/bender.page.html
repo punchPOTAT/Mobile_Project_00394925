@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Bender</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bender</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img alt="Bender" src="https://vignette1.wikia.nocookie.net/es.futurama/images/e/e7/Bender-Futurama-21.png/revision/latest?cb=20140402181423">
+  <br>
+  <p> <b>Name: </b> {{ bots[2].name }} </p>
+  <p> <b>From: </b> {{ bots[2].from }} </p>
+  <p> <b>Role: </b> {{ bots[2].role }} </p>
+  <p> <b>Media: </b> {{ bots[2].media }} </p>
+  <hr>
+
+  <p>Bender is a futuristic robot that is powered by alcohol. With that comes an addictive personality, as well as being rude, apathetic, and very witty while showing little regard to others. But despite what he projects himself as, deep down he certainly values his friendships.</p>
+
+  <h4>Like this bot?</h4>
+  <ion-radio-group value="choice">
+    <ion-item>
+      <ion-label>Yes</ion-label>
+      <ion-radio value="yes"></ion-radio> <br />
+    </ion-item>
+    <ion-item>
+      <ion-label>No</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </ion-item>
+  </ion-radio-group>

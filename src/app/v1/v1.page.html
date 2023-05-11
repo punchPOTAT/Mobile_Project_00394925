@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>V1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">V1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img alt="V1" src="https://booru.newblood.games/_images/622b0841d56db7467a06553358ff3205/671%20-%20(ultrakill)%20art%20artist:noreception%20character:filth%20character:v1_(ultrakill)%20fan_art%20fanart%20series:ultrakill.png" />
+
+  <br>
+  <p> <b>Name: </b> {{ bots[1].name }} </p>
+  <p> <b>From: </b> {{ bots[1].from }} </p>
+  <p> <b>Role: </b> {{ bots[1].role }} </p>
+  <p> <b>Media: </b> {{ bots[1].media }}</p>
+  <hr>
+  <p>A machine built for war, this prototype is of a design that never made it to mass production. It poses great agility with its anthropomorphic structure, and posses the huge advantage of being able to repair on the go by using blood as a fuel source.</p>
+
+  <ion-button (click)="OpenBrowser()">SEE IT IN ACTION</ion-button>
+
+  <h4>Like this bot?</h4>
+  <ion-radio-group value="choice">
+    <ion-item>
+      <ion-label>Yes</ion-label>
+      <ion-radio value="yes"></ion-radio> <br />
+    </ion-item>
+    <ion-item>
+      <ion-label>No</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>

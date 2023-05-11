@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      BOTS R US
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,56 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">BOTS R US</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+  <!-- Collection of ionic card components used to give the home page a nice look-->
+  <div>
+    <h4>Welcome to BOTS R US. Below you will find a collection of bots. Pick which ones you like!</h4>
+    <ion-card [routerLink]="['/optimus']"> <!-- '[routerLink]' used to send user forward to the respective page when clicked on-->
+      <img alt="Optimus" src="https://www.zoom-comics.com/wp-content/uploads/sites/36/2018/09/Optimus-Prime-768x432.jpg" />
+      <ion-card-header>
+        <ion-card-title>Optimus Prime</ion-card-title>
+        <ion-card-subtitle>Fearless Leader</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card [routerLink]="['/v1']">
+      <img alt="V1" src="https://booru.newblood.games/_images/622b0841d56db7467a06553358ff3205/671%20-%20(ultrakill)%20art%20artist:noreception%20character:filth%20character:v1_(ultrakill)%20fan_art%20fanart%20series:ultrakill.png" />
+      <ion-card-header>
+        <ion-card-title>V1</ion-card-title>
+        <ion-card-subtitle>Killing Machine</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card [routerLink]="['/bender']">
+      <img height="150" width="300" alt="Bender" src="https://vignette1.wikia.nocookie.net/es.futurama/images/e/e7/Bender-Futurama-21.png/revision/latest?cb=20140402181423" />
+      <ion-card-header>
+        <ion-card-title>Bender</ion-card-title>
+        <ion-card-subtitle>Metallic Alcoholic</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card [routerLink]="['/rodney']">
+      <img height="150" width="300" alt="Rodney" src="http://images1.fanpop.com/images/photos/1800000/Robots-robots-2005-1851510-720-536.jpg" />
+      <ion-card-header>
+        <ion-card-title>Rodney</ion-card-title>
+        <ion-card-subtitle>Aspiring Inventor</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
   </div>
 </ion-content>

@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Tried to add a back button but no matter what I tried I couldn't get it to work, from it either disappearing or doing nothing when clicked on. Might be a routing issue.-->
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  <ion-title>Optimus</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+     <ion-toolbar>
+      <ion-title size="large">Optimus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img alt="Optimus" src="https://www.zoom-comics.com/wp-content/uploads/sites/36/2018/09/Optimus-Prime-768x432.jpg">
+  <br>
+  <!-- Data binding at work. The same thing is done for all 4 pages-->
+  <p> <b>Name: </b> {{ bots[0].name }} </p>
+  <p> <b>From: </b> {{ bots[0].from }} </p>
+  <p> <b>Role: </b> {{ bots[0].role }} </p>
+  <p> <b>Media: </b> {{ bots[0].media }} </p>
+  <hr>
+  <p> The commander of the Autobot faction, leading them to victory in a war lasting for eons on their home planet, Optimus Prime is a noble warrior who cares for his comrades. He fights for the good of his people and for justice.</p>
+
+  <ion-button (click)="OpenBrowser()">See him in his newest movie!</ion-button>
+
+  <h4>Like this bot?</h4>
+  <ion-radio-group value="choice">
+    <ion-item>
+      <ion-label>Yes</ion-label>
+      <ion-radio value="yes"></ion-radio> <br />
+    </ion-item>
+    <ion-item>
+      <ion-label>No</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
